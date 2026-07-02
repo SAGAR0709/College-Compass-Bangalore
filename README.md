@@ -1,16 +1,53 @@
-# React + Vite
+# College Compass Bangalore
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+College Compass is a React-based web application that helps students discover, compare, and shortlist colleges in Bangalore across Engineering, BBA, and B.Com programs.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **College Discovery** — Browse and search colleges by category (Engineering, BBA, B.Com)
+- **Side-by-Side Comparison** — Compare colleges on fees, placements, rankings, admission mode, and more
+- **Favorites** — Save colleges to a shortlist for quick access
+- **Filtering** — Filter by fee range, admission mode, and search keywords
+- **Detailed Profiles** — View comprehensive college data including reviews, recruiters, and facilities
+- **ROI Analysis** — Compare fee vs placement outcomes to find the best value
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** with Vite
+- **React Router v7** for client-side routing
+- **Lucide React** for icons
+- **CSS** with utility classes and responsive design
+- **Oxlint** for linting
 
-## Expanding the Oxlint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+git clone https://github.com/SAGAR0709/College-Compass-Bangalore.git
+cd College-Compass-Bangalore
+npm install
+npm run dev
+```
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run Oxlint |
+
+## Project Structure
+
+```
+src/
+  components/     — Reusable UI (Navbar, Footer, CollegeCard)
+  pages/          — Route pages (Home, CourseListing, Compare, etc.)
+  context/        — React Context for global state
+  data/           — College data as JS module
+  assets/         — Images and static assets
+```
+
+## Data
+
+College data is stored in `src/data/colleges.js` with a structured schema covering fees, placements, rankings, reviews, facilities, and recruiters across 3 categories.
